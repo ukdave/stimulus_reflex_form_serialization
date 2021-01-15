@@ -1,0 +1,10 @@
+<h1>Comments</h1>
+
+<% @comments.each do |comment| %>
+  <%= render 'comment', comment: comment %>
+  <hr />
+<% end %>
+
+<h2>Add Comment</h2>
+
+<%= render 'form', comment: @comment %>
